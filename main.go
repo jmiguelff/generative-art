@@ -28,6 +28,7 @@ func main() {
 	if err != nil {
 		log.Panicln(err)
 	}
+	saveOutput(img, "in2.png")
 
 	destWidth := 2000
 	s := sketch.NewSketch(img, sketch.UserParams{
